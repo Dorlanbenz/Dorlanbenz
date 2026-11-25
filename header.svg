@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 220" width="900" height="220" role="img" aria-labelledby="t d">
+  <title id="t">Deraniaina Orlando Ratovonomenjanahary</title>
+  <desc id="d">Étudiant en BUT Informatique, alternant, à la recherche d'un Bac+5 en alternance</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1216"/>
+      <stop offset="1" stop-color="#12292f"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" x2="1">
+      <stop offset="0" stop-color="#d9b46a"/>
+      <stop offset="1" stop-color="#f2d9a0"/>
+    </linearGradient>
+    <clipPath id="clip"><rect width="900" height="220" rx="14"/></clipPath>
+  </defs>
+  <style>
+    .name { font: 700 44px 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; fill: #f4f7f8; letter-spacing: .5px; opacity: 0; animation: rise 1.1s .2s ease-out forwards; }
+    .sub  { font: 400 18px 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; fill: #b9c7cb; opacity: 0; animation: rise 1.1s .7s ease-out forwards; }
+    .tag  { font: 600 15px 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; fill: #e6c887; opacity: 0; animation: rise 1.1s 1.2s ease-out forwards; letter-spacing: .4px; }
+    .line { fill: url(#gold); transform-origin: 60px 0; transform: scaleX(0); animation: grow 1.2s .5s ease-out forwards; }
+    .w1 { animation: drift 16s linear infinite; }
+    .w2 { animation: drift 24s linear infinite reverse; }
+    @keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes grow { to { transform: scaleX(1); } }
+    @keyframes drift { from { transform: translateX(0); } to { transform: translateX(-600px); } }
+    @media (prefers-reduced-motion: reduce) {
+      .name, .sub, .tag { animation: none; opacity: 1; }
+      .line { animation: none; transform: scaleX(1); }
+      .w1, .w2 { animation: none; }
+    }
+  </style>
+  <g clip-path="url(#clip)">
+    <rect width="900" height="220" fill="url(#bg)"/>
+    <path class="w2" d="M0 165 q75 25 150 0 t150 0 t150 0 t150 0 t150 0 t150 0 t150 0 t150 0 t150 0 t150 0 t150 0 t150 0 L1800 220 L0 220 Z" fill="#2a8c8c" opacity=".16"/>
+    <path class="w1" d="M0 150 q75 -30 150 0 t150 0 t150 0 t150 0 t150 0 t150 0 t150 0 t150 0 t150 0 t150 0 t150 0 t150 0 L1800 220 L0 220 Z" fill="#3fb6b0" opacity=".22"/>
+    <text class="name" x="60" y="92">Deraniaina Orlando</text>
+    <rect class="line" x="60" y="108" width="120" height="3" rx="1.5"/>
+    <text class="sub" x="60" y="142">Étudiant en BUT Informatique · Alternant</text>
+    <text class="tag" x="60" y="172">Développement · IA · Cybersécurité · Infra   |   Bac+5 en alternance 2027</text>
+  </g>
+</svg>
